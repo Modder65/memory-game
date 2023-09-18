@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff5e1;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #deb887;
+  color: #654321;
+  box-shadow: 0 4px 2px -2px rgba(139, 69, 19, 0.2);
+  width: 100%;
+  padding: 15px;
+}
+
+.score-keepers {
+  display: flex;
+  gap: 50px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 20px;
+  max-width: 1400px;
+}
+
+.card {
+  width: 421px;
+  height: 614px;
+}
+
+.card:active {
+  transform: scale(0.95);
+}
+
+h1 {
+  font-size: 38px;
+}
+
+p {
+  font-size: 24px;
+}
