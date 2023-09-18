@@ -1,5 +1,7 @@
 # Yugioh Memory Card Game
 
+[Live Demo](https://memory-game-9t0.pages.dev/)
+
 ## Overview
 
 Simple memory card game that involves clicking the cards on screen and attempting to remember all the cards that have already been clicked. If a card is clicked that was previously clicked it results in a game loss. The game is won when the player successfuly clicks every card with no repeats. The players current score and their best score are updated accordingly throughout the game.
