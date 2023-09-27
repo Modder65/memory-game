@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export function Card({ card, onCardClick, shuffleCards }) {
   const handleCardClick = () => {
     onCardClick();
@@ -10,3 +12,18 @@ export function Card({ card, onCardClick, shuffleCards }) {
     </div>
   );
 }
+
+/* Prop Validation */
+
+Card.propTypes = {
+  card: PropTypes.shape({
+    card_images: PropTypes.arrayOf(
+      PropTypes.shape({
+        image_url: PropTypes.string.isRequired,
+      })
+    ).isRequired,
+    name: PropTypes.string.isRequired,
+  }).isRequired,
+  onCardClick: PropTypes.func.isRequired,
+  shuffleCards: PropTypes.func.isRequired,
+};

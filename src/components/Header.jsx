@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export function Header({ currentScore, bestScore }) {
   return (
     <header className="heading">
@@ -13,3 +15,10 @@ export function Header({ currentScore, bestScore }) {
     </header>
   );
 }
+
+/* Prop Validation */
+
+Header.propTypes = {
+  currentScore: PropTypes.number.isRequired,
+  bestScore: PropTypes.number.isRequired,
+};

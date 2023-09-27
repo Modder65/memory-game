@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/App.css";
 import { Header } from "./Header.jsx";
-import { Cards } from "./CardsContainer.jsx";
+import { CardGame } from "./CardsContainer.jsx";
 
 function App() {
   const [currentScore, setCurrentScore] = useState(0);
@@ -10,9 +10,10 @@ function App() {
   return (
     <div className="app">
       <Header currentScore={currentScore} bestScore={bestScore} />
-      <Cards
+      <CardGame
         currentScore={currentScore}
         setCurrentScore={setCurrentScore}
+        bestScore={bestScore}
         setBestScore={setBestScore}
       />
     </div>
